@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/css.css" />
+</head>
+
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left" class="seat"><span>当前位置：<a href="#">患者服务</a>&gt;电子邮件</span><img src="images/br-back.jpg" /><img src="images/br-forward.jpg" /></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<table width="730" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+    <td>
+    <table border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td><img src="images/m-icon-06.jpg"/></td>
+        <td class="news-menu-txt-t">电子邮件</td>
+        <td><img src="images/m-icon-07.jpg"/></td>
+        <td class="news-menu-txt"><a href="ac-sms.html">发送短信</a></td>
+        <td><img src="images/m-icon-08.jpg"/></td>
+        <td class="news-menu-txt"><a href="ac-education.html">教育培训</a></td>
+        <td><img src="images/m-icon-09.jpg"/></td>
+        <td class="news-menu-txt"><a href="ac-down.html">资料下载</a></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="center" class="news-menu-line"></td>
+  </tr>
+  <tr>
+    <td>
+      	<div class="big_box_top2"></div>
+    <div class="big_box_m">
+      <table width="96%" border="0" align="center" cellpadding="0" cellspacing="0"><tr><td height="5"></td></tr></table>
+      <table width="96%" border="0" align="center" cellpadding="0" cellspacing="0" class="email-table">
+        <tr>
+          <td width="11%" align="center" valign="middle"><img src="images/em-br.jpg" width="53" height="53" /></td>
+          <td width="89%"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="11%">收件人：</td>
+              <td width="80%"><input type="text" name="textfield2" id="textfield2" value="张三长,王天佑,高小明,吴新雨"/></td>
+              <td width="9%" align="center"><a href="javascript:;" onclick="$('#fileDiv').hide();$('#mailtoDiv').toggle();"><img src="images/br-name.jpg"/></a></td>
+            </tr>
+            <tr>
+              <td>标　题：</td>
+              <td><input type="text" name="textfield2" id="textfield3" /></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>附　件：</td>
+              <td><input type="text" name="textfield3" id="textfield4" /></td>
+              <td align="center"><a href="javascript:;" onclick="$('#mailtoDiv').hide();$('#fileDiv').toggle();"><img src="images/br-file.jpg"/></a></td>
+            </tr>
+			<tr>
+				<td>模　板：</td>
+				<td><select onchange="$('#content').text(this.value);">
+				<option value="">--请选择模板--</option>
+				<option value="亲爱的[姓名]，关爱提醒">关爱提醒</option>
+				<option value="亲爱的[姓名]，教育培训">教育培训</option>
+				<option value="亲爱的[姓名]，应诊通知">应诊通知</option>
+				</select></td>
+				<td align="center"></td>
+			</tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td colspan="2" height="5"></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="border:1px solid #4797cd;"><textarea name="content" id="content" cols="45" rows="8" style="background:none; border:none; width:100%;"></textarea></td>
+        </tr>
+      </table>
+    </div>
+    <div class="big_box_foot"></div>
+    </td>
+  </tr>
+  <tr><td height="5"></td></tr>
+  <tr><td>
+	<div class="big_box_top"><span>客户名单</span></div>
+    <div class="big_box_m">
+      <table width="96%" border="0" align="center" cellpadding="0" cellspacing="0"><tr><td height="5"></td></tr></table>
+      <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0" class="work-list">
+        <tr>
+          <th width="5%">紧急</th>
+          <th width="11%">姓名</th>
+          <th width="11%">客户级别</th>
+          <th width="23%">病种</th>
+          <th width="14%">来源</th>
+          <th width="18%">状态</th>
+          <th width="12%">操作</th>
+        </tr>
+        <tr>
+          <td><img src="images/br-orange.gif"/></td>
+          <td>张三长</td>
+          <td>vip</td>
+          <td>高血压</td>
+          <td>系统生成</td>
+          <td>正处理</td>
+          <td><a href="javascript:;" onclick="alert('取消成功！');">取消</a></td>
+        </tr>
+        <tr>
+          <td><img src="images/br-orange.gif"/></td>
+          <td>王天佑</td>
+          <td>普通</td>
+          <td>糖尿病</td>
+          <td>系统生成</td>
+          <td>正处理</td>
+          <td><a href="javascript:;" onclick="alert('取消成功！');">取消</a></td>
+        </tr>
+        <tr>
+          <td><img src="images/br-green.gif"/></td>
+          <td>高小明</td>
+          <td>vip</td>
+          <td>高血压</td>
+          <td>系统生成</td>
+          <td>正处理</td>
+          <td><a href="javascript:;" onclick="alert('取消成功！');">取消</a></td>
+        </tr>
+        <tr>
+          <td><img src="images/br-green.gif"/></td>
+          <td>吴新雨</td>
+          <td>普通</td>
+          <td>高血压</td>
+          <td>系统生成</td>
+          <td>正处理</td>
+          <td><a href="javascript:;" onclick="alert('取消成功！');">取消</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="big_box_foot"></div>
+  </td></tr>
+</table>
+<div id="mailtoDiv" style="display:none; position:absolute; left:173px; top:120px; width:500px;">
+<table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+		<td><div id="S_Cont_21" style="width:500px; border-radius:5px;">
+				<div class="big_box_top" style="width:500px; border-left:solid 1px rgb(70,150,201); border-right:solid 1px rgb(70,150,201); border-radius:5px 5px 0 0;"><span>收件人</span><a  onclick="$('#mailtoDiv').toggle();">X</a></div>
+				<div class="big_box_m" style="width:500px; border-left:solid 1px rgb(70,150,201); border-right:solid 1px rgb(70,150,201);">
+					<table width="96%" border="0" align="center" cellpadding="0" cellspacing="0" >
+						<tr>
+							<td align="left" width="20"></td>
+							<td align="left" style="height:6px; border-bottom:1px #999999 dotted;">紧急</td>
+							<td align="left" style="height:6px; border-bottom:1px #999999 dotted;">姓名</td>
+							<td align="left" style="height:6px; border-bottom:1px #999999 dotted;">客户级别</td>
+							<td align="left" style="height:6px; border-bottom:1px #999999 dotted;">病种</td>
+							<td align="left" style="height:6px; border-bottom:1px #999999 dotted;"><input type="checkbox"/></td>
+						</tr>
+						<tr>
+							<td align="left" width="20"></td>
+							<td align="left" style="color:#F00; height:24px; line-height:24px; color:#666666;"><img src="images/br-orange.gif"></td>
+							<td align="left" style="color:#F00; height:24px; line-height:24px; color:#666666;">冯望舒</td>
+							<td align="left" style="color:#F00; height:24px; line-height:24px; color:#666666;">普通</td>
+							<td align="left" style="color:#F00; height:24px; line-height:24px; color:#666666;">慢性胃炎</td>
+							<td align="left" style="color:#F00; height:24px; line-height:24px; color:#666666;"><input type="checkbox"/></td>
+						</tr>
+						<tr>
+							<td align="left" width="20"></td>
+							<td align="left" style="color:#F00; height:24px; line-height:24px; color:#666666;"><img src="images/br-orange.gif"></td>
+							<td align="left" style="color:#F00; height:24px; line-height:24px; color:#666666;">卫涵畅</td>
+							<td align="left" style="color:#F00; height:24px; line-height:24px; color:#666666;">普通</td>
+							<td align="left" style="color:#F00; height:24px; line-height:24px; color:#666666;">慢性胃炎</td>
+							<td align="left" style="color:#F00; height:24px; line-height:24px; color:#666666;"><input type="checkbox"/></td>
+						</tr>
+						<tr>
+							<td align="left" width="20"></td>
+							<td align="left" style="color:#F00; height:24px; line-height:24px; color:#666666;"><img src="images/br-green.gif"></td>
+							<td align="left" style="color:#F00; height:24px; line-height:24px; color:#666666;">金柯勤</td>
+							<td align="left" style="color:#F00; height:24px; line-height:24px; color:#666666;">普通</td>
+							<td align="left" style="color:#F00; height:24px; line-height:24px; color:#666666;">慢性胃炎</td>
+							<td align="left" style="color:#F00; height:24px; line-height:24px; color:#666666;"><input type="checkbox"/></td>
+						</tr>
+						<tr>
+							<td align="left" width="20"></td>
+							<td align="left" style="height:6px; border-top:1px #999999 dotted;" colspan="4"></td>
+							<td align="left" style="height:6px; border-top:1px #999999 dotted;"  class="news-menu-txt" ><a href="javascript:;" onclick="$('#mailtoDiv').hide();"><span><strong><img style="vertical-align: middle;" src="images/br-link.gif">添加</strong></span></a></td>
+						</tr>
+					</table>
+				</div>
+				<div class="big_box_foot" style="width:500px; border-left:solid 1px rgb(70,150,201); border-right:solid 1px rgb(70,150,201); border-radius:0 0 5px 5px;"></div>
+			</div></td>
+	</tr>
+</table>
+</div>
+<div id="fileDiv" style="display:none; position:absolute; left:173px; top:180px; width:500px;">
+<table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+		<td><div id="S_Cont_21" style="width:500px; border-radius:5px;">
+				<div class="big_box_top" style="width:500px; border-left:solid 1px rgb(70,150,201); border-right:solid 1px rgb(70,150,201); border-radius:5px 5px 0 0;"><span>共享文件添加</span><a  onclick="$('#fileDiv').toggle();">X</a></div>
+				<div class="big_box_m" style="width:500px; border-left:solid 1px rgb(70,150,201); border-right:solid 1px rgb(70,150,201);">
+					<table width="96%" border="0" align="center" cellpadding="0" cellspacing="0" >
+						<tr>
+							<td align="left" style="height:6px; border-bottom:1px #999999 dotted;">文件名</td><td style="height:6px; border-bottom:1px #999999 dotted;" title="全选/反选"><input id="fileAll" name="fileAll" type="checkbox" /></td>
+						</tr>
+						<tr>
+							<td align="left" style="height:24px; line-height:24px; color:#666666;">　[血液病教学中循证医学原则的应用]</td><td><input id="file" name="file" type="checkbox" /></td>
+						</tr>
+						<tr>
+							<td align="left" style="height:24px; line-height:24px; color:#666666;">　[血脂异常的防治进展及循证医学的临床启示]</td><td><input id="file" name="file" type="checkbox" /></td>
+						</tr>
+						<tr>
+							<td align="left" style="height:24px; line-height:24px; color:#666666;">　[植物药对MDR1基因的调控及对P糖蛋白功能的影]</td><td><input id="file" name="file" type="checkbox" /></td>
+						</tr>
+						<tr>
+							<td align="left" style="height:24px; line-height:24px; color:#666666;">　[学习循证医学指导呼吸疾病的临床研究]</td><td><input id="file" name="file" type="checkbox" /></td>
+						</tr>
+						<tr>
+							<td align="left" style="height:24px; line-height:24px; color:#666666;">　[学习循证医学,转变临床思维]</td><td><input id="file" name="file" type="checkbox" /></td>
+						</tr>
+						<tr>
+							<td align="left" style="height:6px; border-top:1px #999999 dotted;"></td><td class="news-menu-txt" style="height:6px; border-top:1px #999999 dotted;"><a href="javascript:;" onclick="$('#fileDiv').hide();"><span><strong><img style="vertical-align: middle;" src="images/br-link.gif">添加</strong></span></a></td>
+						</tr>
+					</table>
+				</div>
+				<div class="big_box_foot" style="width:500px; border-left:solid 1px rgb(70,150,201); border-right:solid 1px rgb(70,150,201); border-radius:0 0 5px 5px;"></div>
+			</div></td>
+	</tr>
+</table>
+</div>
+</body>
+</html>

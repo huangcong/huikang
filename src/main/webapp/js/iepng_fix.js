@@ -1,0 +1,1 @@
+﻿DD_belatedPNG.fix('li,i,div,body,html,ul,p,em,span,a,#content-box ul li a,img,#video_list a:hover,h1'); 

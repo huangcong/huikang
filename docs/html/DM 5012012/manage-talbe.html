@@ -1,0 +1,641 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="css/css.css" />
+<!--[if !IE]>   jq库&    <![endif]-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/cut_over.js"></script>
+<script type="text/javascript" src="js/show.js"></script>
+<script>
+change = function(id){
+	for(var i=1;i < 5;i++){
+		$('#info-' + i).hide();	
+	}
+	$('#info-' + id).show();
+}
+</script>
+</head>
+
+<body>
+<table border="0" align="center" cellpadding="0" cellspacing="0" class="list-input-table" style="width:700px">
+	<tr>
+		<td width="303" align="left"><img src="images/c-g.jpg" alt=""/>可靠数据 <img src="images/c-b.jpg" alt=""/>参考数据 <img src="images/c-o.jpg" alt=""/>隐私数据</td>
+		<td width="97" align="right">请选择时间：</td>
+		<td width="83" align="center" class="list-input"><input name="textfield" type="text" id="textfield" value="2012-02-01" /></td>
+		<td width="39"><img src="images/list-data-input-br.jpg" alt=""/></td>
+		<td width="30" align="center">至</td>
+		<td width="83" align="center" class="list-input"><input name="textfield2" type="text" id="textfield" value="2012-02-01" /></td>
+		<td width="39"><img src="images/list-data-input-br.jpg" alt=""/></td>
+		<td width="6"></td>
+	</tr>
+</table>
+<table border="0" align="center" cellpadding="0" cellspacing="0" class="manage-list" width="700">
+	<tr>
+		<th width="120"><span onclick="toggle('td1')" style="cursor:pointer;">2011/07/01-12/31</span></th>
+		<th width="40">1</th>
+		<th width="40">2</th>
+		<th width="40">3</th>
+		<th width="40">4</th>
+		<th width="40">5</th>
+		<th width="40">6</th>
+		<th width="40">7</th>
+		<th width="40">8</th>
+		<th width="40">9</th>
+		<th width="40">10</th>
+		<th width="40">11</th>
+		<th width="40">12</th>
+		<th width="40">13</th>
+		<th width="40">14</th>
+	</tr>
+</table>
+<table border="0" align="center" cellpadding="0" cellspacing="0" class="manage-list" width="700" style="display:block"  id="td1">
+	<tr>
+		<td width="120">2011/11/10-12/31</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40" class="tdb tmhover" onclick="change('1');"><img src="images/i-card--plus.gif" alt="" width="16" height="16" /></td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40" class="tdg" onclick="change('4');"><img src="images/i-flask--plus.gif" alt="" width="16" height="16" /></td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40" class="tdb" onclick="change('2');"><img src="images/i-image--plus.gif" alt="" width="16" height="16" /></td>
+	</tr>
+	<tr>
+		<td width="120">2011/10/10-11/09</td>
+		<td width="40">&nbsp;</td>
+		<td width="40" class="tdb" onclick="change('2');"><img src="images/i-clipboard--plus.gif" alt="" /></td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+	</tr>
+	<tr>
+		<td>2011/09/16-10/11</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td  class="tdo" onclick="change('3');"><span class="tdb"><img src="images/i-image--plus.gif" alt="" width="16" height="16" /></span></td>
+		<td class="tdb" onclick="change('4');"><span class="tdg"><img src="images/i-flask--plus.gif" alt="" width="16" height="16" /></span></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td >&nbsp;</td>
+		<td class="tdg tmhover" onclick="change('2');"><span class="tdb"><img src="images/i-card--plus.gif" alt="" width="16" height="16" /></span></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>2011/08/14-09/15</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td >&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td class="tdo" onclick="change('2');"><span class="tdb"><img src="images/i-table--plus.gif" alt="" width="16" height="16" /></span></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td class="tdb" onclick="change('3');"><img src="images/i-image--plus.gif" alt="" width="16" height="16" /></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>2011/07/12-08/13</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td class="tdg" onclick="change('1');"><span class="tdb"><img src="images/i-image--plus.gif" alt="" width="16" height="16" /></span></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td class="tdo" onclick="change('4');"><span class="tdb"><img src="images/i-table--plus.gif" alt="" width="16" height="16" /></span></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>2011/06/10-07/11</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td class="tdg" onclick="change('2');"><span class="tdb"><img src="images/i-table--plus.gif" alt="" width="16" height="16" /></span></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+<table border="0" align="center" cellpadding="0" cellspacing="0" class="manage-list" width="700">
+	<tr>
+		<th width="120"><span onclick="toggle('td2')"  style="cursor:pointer;">2011/01/01-06/31</span></th>
+		<th width="40">1</th>
+		<th width="40">2</th>
+		<th width="40">3</th>
+		<th width="40">4</th>
+		<th width="40">5</th>
+		<th width="40">6</th>
+		<th width="40">7</th>
+		<th width="40">8</th>
+		<th width="40">9</th>
+		<th width="40">10</th>
+		<th width="40">11</th>
+		<th width="40">12</th>
+		<th width="40">13</th>
+		<th width="40">14</th>
+	</tr>
+</table>
+<table border="0" align="center" cellpadding="0" cellspacing="0" class="manage-list" width="680" style="display:none;"  id="td2">
+	<tr>
+		<td width="120">2011/06/10-06/31</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40" class="tdb tmhover" onclick="change('1');"><img src="images/i-card--plus.gif" alt="" width="16" height="16" /></td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40" class="tdg" onclick="change('4');"><img src="images/i-flask--plus.gif" alt="" width="16" height="16" /></td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40" class="tdb" onclick="change('2');"><img src="images/i-image--plus.gif" alt="" width="16" height="16" /></td>
+	</tr>
+	<tr>
+		<td width="120">2011/05/10-06/09</td>
+		<td width="40">&nbsp;</td>
+		<td width="40" class="tdb" onclick="change('2');"><img src="images/i-clipboard--plus.gif" alt="" /></td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+	</tr>
+	<tr>
+		<td>2011/04/16-05/11</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td  class="tdo" onclick="change('3');"><span class="tdb"><img src="images/i-image--plus.gif" alt="" width="16" height="16" /></span></td>
+		<td class="tdb" onclick="change('4');"><span class="tdg"><img src="images/i-flask--plus.gif" alt="" width="16" height="16" /></span></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td >&nbsp;</td>
+		<td class="tdg tmhover" onclick="change('2');"><span class="tdb"><img src="images/i-card--plus.gif" alt="" width="16" height="16" /></span></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>2011/03/14-04/15</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td >&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td class="tdo" onclick="change('2');"><span class="tdb"><img src="images/i-table--plus.gif" alt="" width="16" height="16" /></span></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td class="tdb" onclick="change('3');"><img src="images/i-image--plus.gif" alt="" width="16" height="16" /></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>2011/02/12-03/13</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td class="tdg" onclick="change('1');"><span class="tdb"><img src="images/i-image--plus.gif" alt="" width="16" height="16" /></span></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td class="tdo" onclick="change('4');"><span class="tdb"><img src="images/i-table--plus.gif" alt="" width="16" height="16" /></span></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>2011/01/10-02/11</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td class="tdg" onclick="change('2');"><span class="tdb"><img src="images/i-table--plus.gif" alt="" width="16" height="16" /></span></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+<table border="0" align="center" cellpadding="0" cellspacing="0" class="manage-list" width="700">
+	<tr>
+		<th width="120"><span onclick="toggle('td3')" style="cursor:pointer;">2010/07/01-12/31</span></th>
+		<th width="40">1</th>
+		<th width="40">2</th>
+		<th width="40">3</th>
+		<th width="40">4</th>
+		<th width="40">5</th>
+		<th width="40">6</th>
+		<th width="40">7</th>
+		<th width="40">8</th>
+		<th width="40">9</th>
+		<th width="40">10</th>
+		<th width="40">11</th>
+		<th width="40">12</th>
+		<th width="40">13</th>
+		<th width="40">14</th>
+	</tr>
+</table>
+<table border="0" align="center" cellpadding="0" cellspacing="0" class="manage-list" width="680" style="display:none;"  id="td3">
+	<tr>
+		<td width="120">2011/06/10-06/31</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40" class="tdb tmhover" onclick="change('1');"><img src="images/i-card--plus.gif" alt="" width="16" height="16" /></td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40" class="tdg" onclick="change('4');"><img src="images/i-flask--plus.gif" alt="" width="16" height="16" /></td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40" class="tdb" onclick="change('2');"><img src="images/i-image--plus.gif" alt="" width="16" height="16" /></td>
+	</tr>
+	<tr>
+		<td width="120">2011/05/10-06/09</td>
+		<td width="40">&nbsp;</td>
+		<td width="40" class="tdb" onclick="change('2');"><img src="images/i-clipboard--plus.gif" alt="" /></td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+		<td width="40">&nbsp;</td>
+	</tr>
+	<tr>
+		<td>2011/04/16-05/11</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td  class="tdo" onclick="change('3');"><span class="tdb"><img src="images/i-image--plus.gif" alt="" width="16" height="16" /></span></td>
+		<td class="tdb" onclick="change('4');"><span class="tdg"><img src="images/i-flask--plus.gif" alt="" width="16" height="16" /></span></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td >&nbsp;</td>
+		<td class="tdg tmhover" onclick="change('2');"><span class="tdb"><img src="images/i-card--plus.gif" alt="" width="16" height="16" /></span></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>2011/03/14-04/15</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td >&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td class="tdo" onclick="change('2');"><span class="tdb"><img src="images/i-table--plus.gif" alt="" width="16" height="16" /></span></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td class="tdb" onclick="change('3');"><img src="images/i-image--plus.gif" alt="" width="16" height="16" /></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>2011/02/12-03/13</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td class="tdg" onclick="change('1');"><span class="tdb"><img src="images/i-image--plus.gif" alt="" width="16" height="16" /></span></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td class="tdo" onclick="change('4');"><span class="tdb"><img src="images/i-table--plus.gif" alt="" width="16" height="16" /></span></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>2011/01/10-02/11</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td class="tdg" onclick="change('2');"><span class="tdb"><img src="images/i-table--plus.gif" alt="" width="16" height="16" /></span></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+<table border="0" align="center" cellpadding="0" cellspacing="0" class="manage-list" width="700">
+	<tr>
+		<th width="120"><span onclick="toggle('td4')" style="cursor:pointer;">2010/01/01-06/31</span></th>
+		<th width="40">1</th>
+		<th width="40">2</th>
+		<th width="40">3</th>
+		<th width="40">4</th>
+		<th width="40">5</th>
+		<th width="40">6</th>
+		<th width="40">7</th>
+		<th width="40">8</th>
+		<th width="40">9</th>
+		<th width="40">10</th>
+		<th width="40">11</th>
+		<th width="40">12</th>
+		<th width="40">13</th>
+		<th width="40">14</th>
+	</tr>
+</table>
+<table width="200" border="0" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+		<td height="10"></td>
+	</tr>
+</table>
+<table width="700" border="0" align="center" cellpadding="0" cellspacing="0" class="manage-list">
+	<tr>
+		<th align="left" style="font-weight:bold; text-align:left;">&nbsp;&nbsp;临床信息</th>
+	</tr>
+</table>
+<table id="info-1" width="700" border="0" align="center" cellpadding="0" cellspacing="0" class="manage-list">
+	<tr>
+		<th width="15%">静脉血FBG：</th>
+		<td width="10%">120mmol/L</td>
+		<th width="15%">PBG2h：</th>
+		<td width="10%">21mmol/L</td>
+		<th width="15%">HbA1c：</th>
+		<td width="10%">23%</td>
+		<th width="15%">TG:</th>
+		<td width="10%">56mmol/L</td>
+	</tr>
+	<tr>
+		<th width="15%">TC：</th>
+		<td width="10%">120mmol/L</td>
+		<th width="15%">毛细血管FBG：</th>
+		<td width="10%">21mmol/L</td>
+		<th width="15%">毛细血管PBG2h：</th>
+		<td width="10%">21mmol/L</td>
+		<th width="15%">餐后2H抽血时间：</th>
+		<td width="10%">20:00</td>
+	</tr>
+	<tr>
+		<th width="15%">收缩压1：</th>
+		<td width="10%">90mmHg</td>
+		<th width="15%">舒张压1：</th>
+		<td width="10%">110mmHg</td>
+		<th width="15%">收缩压2：</th>
+		<td width="10%">90mmHg</td>
+		<th width="15%">舒张压2：</th>
+		<td width="10%">110mmHg</td>
+	</tr>
+	<tr>
+		<th width="15%">身高：</th>
+		<td width="10%">170cm</td>
+		<th width="15%">体重：</th>
+		<td width="10%">80Kg</td>
+		<th width="15%">腰围：</th>
+		<td width="10%">160cm</td>
+		<th width="15%">臀围：</th>
+		<td width="10%">189cm</td>
+	</tr>
+	<tr>
+		<th width="15%">左眼视力：</th>
+		<td width="10%">1.0</td>
+		<th width="15%">右眼视力：</th>
+		<td width="10%">0.8</td>
+		<th width="15%"></th>
+		<td width="10%"></td>
+		<th width="15%">最后更新日期：</th>
+		<td width="10%">2012.04.05</td>
+	</tr>
+</table>
+<table id="info-2" width="700" border="0" align="center" cellpadding="0" cellspacing="0" class="manage-list" style="display:none;">
+	<tr>
+		<th width="15%">TC：</th>
+		<td width="10%">125mmol/L</td>
+		<th width="15%">毛细血管FBG：</th>
+		<td width="10%">25mmol/L</td>
+		<th width="15%">毛细血管PBG2h：</th>
+		<td width="10%">25mmol/L</td>
+		<th width="15%">餐后2H抽血时间：</th>
+		<td width="10%">20:00</td>
+	</tr>
+	<tr>
+		<th width="15%">收缩压1：</th>
+		<td width="10%">98mmHg</td>
+		<th width="15%">舒张压1：</th>
+		<td width="10%">100mmHg</td>
+		<th width="15%">收缩压2：</th>
+		<td width="10%">95mmHg</td>
+		<th width="15%">舒张压2：</th>
+		<td width="10%">120mmHg</td>
+	</tr>
+	<tr>
+		<th width="15%">静脉血FBG：</th>
+		<td width="10%">135mmol/L</td>
+		<th width="15%">PBG2h：</th>
+		<td width="10%">25mmol/L</td>
+		<th width="15%">HbA1c：</th>
+		<td width="10%">25%</td>
+		<th width="15%">TG:</th>
+		<td width="10%">56mmol/L</td>
+	</tr>
+	<tr>
+		<th width="15%">身高：</th>
+		<td width="10%">160cm</td>
+		<th width="15%">体重：</th>
+		<td width="10%">75Kg</td>
+		<th width="15%">腰围：</th>
+		<td width="10%">150cm</td>
+		<th width="15%">臀围：</th>
+		<td width="10%">175cm</td>
+	</tr>
+	<tr>
+		<th width="15%">左眼视力：</th>
+		<td width="10%">1.1</td>
+		<th width="15%">右眼视力：</th>
+		<td width="10%">1.2</td>
+		<th width="15%"></th>
+		<td width="10%"></td>
+		<th width="15%">最后更新日期：</th>
+		<td width="10%">2012.04.05</td>
+	</tr>
+</table>
+<table id="info-3" width="700" border="0" align="center" cellpadding="0" cellspacing="0" class="manage-list" style="display:none;">
+	<tr>
+		<th width="15%">收缩压1：</th>
+		<td width="10%">90mmHg</td>
+		<th width="15%">舒张压1：</th>
+		<td width="10%">116mmHg</td>
+		<th width="15%">收缩压2：</th>
+		<td width="10%">95mmHg</td>
+		<th width="15%">舒张压2：</th>
+		<td width="10%">110mmHg</td>
+	</tr>
+	<tr>
+		<th width="15%">静脉血FBG：</th>
+		<td width="10%">120mmol/L</td>
+		<th width="15%">PBG2h：</th>
+		<td width="10%">26mmol/L</td>
+		<th width="15%">HbA1c：</th>
+		<td width="10%">28%</td>
+		<th width="15%">TG:</th>
+		<td width="10%">56mmol/L</td>
+	</tr>
+	<tr>
+		<th width="15%">身高：</th>
+		<td width="10%">170cm</td>
+		<th width="15%">体重：</th>
+		<td width="10%">80Kg</td>
+		<th width="15%">腰围：</th>
+		<td width="10%">160cm</td>
+		<th width="15%">臀围：</th>
+		<td width="10%">189cm</td>
+	</tr>
+	<tr>
+		<th width="15%">TC：</th>
+		<td width="10%">120mmol/L</td>
+		<th width="15%">毛细血管FBG：</th>
+		<td width="10%">26mmol/L</td>
+		<th width="15%">毛细血管PBG2h：</th>
+		<td width="10%">24mmol/L</td>
+		<th width="15%">餐后2H抽血时间：</th>
+		<td width="10%">21:00</td>
+	</tr>
+	<tr>
+		<th width="15%">左眼视力：</th>
+		<td width="10%">1.0</td>
+		<th width="15%">右眼视力：</th>
+		<td width="10%">0.8</td>
+		<th width="15%"></th>
+		<td width="10%"></td>
+		<th width="15%">最后更新日期：</th>
+		<td width="10%">2012.01.04</td>
+	</tr>
+</table>
+<table id="info-4" width="700" border="0" align="center" cellpadding="0" cellspacing="0" class="manage-list" style="display:none;">
+	<tr>
+		<th width="15%">身高：</th>
+		<td width="10%">140cm</td>
+		<th width="15%">体重：</th>
+		<td width="10%">50Kg</td>
+		<th width="15%">腰围：</th>
+		<td width="10%">120cm</td>
+		<th width="15%">臀围：</th>
+		<td width="10%">130cm</td>
+	</tr>
+	<tr>
+		<th width="15%">TC：</th>
+		<td width="10%">110mmol/L</td>
+		<th width="15%">毛细血管FBG：</th>
+		<td width="10%">11mmol/L</td>
+		<th width="15%">毛细血管PBG2h：</th>
+		<td width="10%">11mmol/L</td>
+		<th width="15%">餐后2H抽血时间：</th>
+		<td width="10%">10:00</td>
+	</tr>
+	<tr>
+		<th width="15%">收缩压1：</th>
+		<td width="10%">32mmHg</td>
+		<th width="15%">舒张压1：</th>
+		<td width="10%">140mmHg</td>
+		<th width="15%">收缩压2：</th>
+		<td width="10%">96mmHg</td>
+		<th width="15%">舒张压2：</th>
+		<td width="10%">110mmHg</td>
+	</tr>
+	<tr>
+		<th width="15%">静脉血FBG：</th>
+		<td width="10%">110mmol/L</td>
+		<th width="15%">PBG2h：</th>
+		<td width="10%">11mmol/L</td>
+		<th width="15%">HbA1c：</th>
+		<td width="10%">13%</td>
+		<th width="15%">TG:</th>
+		<td width="10%">16mmol/L</td>
+	</tr>
+	<tr>
+		<th width="15%">左眼视力：</th>
+		<td width="10%">1.5</td>
+		<th width="15%">右眼视力：</th>
+		<td width="10%">1.8</td>
+		<th width="15%"></th>
+		<td width="10%"></td>
+		<th width="15%">最后更新日期：</th>
+		<td width="10%">2012.03.02</td>
+	</tr>
+</table>
+</body>
+</html>

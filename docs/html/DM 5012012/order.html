@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="css/css.css" />
+<!--[if !IE]>   jq库&    <![endif]-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/cut_over.js"></script>
+<script type="text/javascript" src="js/show.js"></script>
+<!--[if IE 6]>
+<script src="js/iepng.js" type="text/javascript"></script>
+<script src="js/iepng_fix.js" type="text/javascript"></script>
+<![endif]-->
+</head>
+
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left" class="seat"><span>当前位置：<a href="#">个人服务</a>&gt;预约</span><img src="images/br-back.jpg" /><img src="images/br-forward.jpg" /></td>
+  </tr>
+</table>
+<table width="725" border="0" align="center" cellpadding="0" cellspacing="0" style="background:url(images/info-b.jpg) bottom center no-repeat #a1c1d6;">
+  <tr>
+    <td height="5"></td>
+  </tr>
+  <tr>
+    <td><table width="96%" border="0" align="center" cellpadding="0" cellspacing="0" class="manage-table">
+      <tr>
+        <th width="12%">姓名：</th>
+        <td width="9%">张三长 </td>
+        <th width="6%">性别：</th>
+        <td width="6%">男</td>
+        <th width="8%">慢性病：</th>
+        <td width="29%">高血压(8年)、糖尿病(2年)</td>
+        <th width="11%">主治医生:</th>
+        <td width="9%">胡医生</td>
+        <td width="10%" class="manage-table-open" ><div onclick="toggle('manage')"></div></td>
+      </tr>
+    </table>
+      <table width="96%" border="0" align="center" cellpadding="0" cellspacing="0" class="manage-table" id="manage" style="display:none;">
+        <tr>
+          <th width="15%">静脉血FBG：</th>
+          <td width="10%">120mmol/L</td>
+          <th width="15%">PBG2h：</th>
+          <td width="10%">21mmol/L</td>
+          <th width="15%">HbA1c：</th>
+          <td width="10%">23%</td>
+          <th width="15%">TG:</th>
+          <td width="10%">56mmol/L</td>
+        </tr>
+        <tr>
+          <th width="15%">TC：</th>
+          <td width="10%">120mmol/L</td>
+          <th width="15%">毛细血管FBG：</th>
+          <td width="10%">21mmol/L</td>
+          <th width="15%">毛细血管PBG2h：</th>
+          <td width="10%">21mmol/L</td>
+          <th width="15%">餐后2H抽血时间：</th>
+          <td width="10%">20:00</td>
+        </tr>
+        <tr>
+          <th width="15%">收缩压1：</th>
+          <td width="10%">90mmHg</td>
+          <th width="15%">舒张压1：</th>
+          <td width="10%">110mmHg</td>
+          <th width="15%">收缩压2：</th>
+          <td width="10%">90mmHg</td>
+          <th width="15%">舒张压2：</th>
+          <td width="10%">110mmHg</td>
+        </tr>
+        <tr>
+          <th width="15%">身高：</th>
+          <td width="10%">170cm</td>
+          <th width="15%">体重：</th>
+          <td width="10%">80Kg</td>
+          <th width="15%">腰围：</th>
+          <td width="10%">160cm</td>
+          <th width="15%">臀围：</th>
+          <td width="10%">189cm</td>
+        </tr>
+        <tr>
+          <th width="15%">左眼视力：</th>
+          <td width="10%">1.0</td>
+          <th width="15%">右眼视力：</th>
+          <td width="10%">0.8</td>
+          <th width="15%"></th>
+          <td width="10%"></td>
+          <th width="15%">最后更新日期：</th>
+          <td width="10%">2012.04.05</td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td height="5"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="10"></td>
+  </tr>
+</table>
+<table width="712" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="457" align="left" valign="bottom" style="border-bottom:1px #0099FF solid;"><div class="tab-big">
+      <ul>
+        <li class="tmhover" onclick="ShowSub(2,1)" id="S_Menu_21">张医生</li>
+        <li onclick="ShowSub(2,2)" id="S_Menu_22">李医生</li>
+        <li onclick="ShowSub(2,3)" id="S_Menu_23">谢医生</li>
+        </ul>
+      </div>
+      
+    </td>
+    <td width="255" align="left" valign="bottom" style="border-bottom:1px #0099FF solid;"><table border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><img src="images/calendar_left.jpg"/></td>
+        <td class="caledar_m">03<b>月</b></td>
+        <td><img src="images/calendar_right.jpg"/></td>
+        <td><img src="images/calendar_left.jpg"/></td>
+        <td class="caledar_m"><b>第</b>1<b>周</b></td>
+        <td><img src="images/calendar_right.jpg"/></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+  <td colspan="2" align="right">&nbsp;</td></tr>
+  <tr>
+    <td colspan="2">
+    <div class="caledar_w"><b>星期日</b></div>
+    <div class="caledar_w">星期一</div>
+    <div class="caledar_w">星期二</div>
+    <div class="caledar_w">星期三</div>
+    <div class="caledar_w">星期四</div>
+    <div class="caledar_w">星期五</div>
+    <div class="caledar_w"><b>星期六</b></div>
+    <div class="caledar_d"><h2>01</h2></div>
+    <div class="caledar_d">
+      <h2>02</h2></div>
+    <div class="caledar_d_g">
+      <h2>03</h2>
+            <ul>
+      <li>12:30<a href="#">社区出诊</a></li>
+      <li>15:30<a href="#">社区讲座</a></li>
+      </ul>
+      </div>
+    <div class="caledar_d">
+      <h2>04</h2>
+      </div>
+    <div class="caledar_d_b">
+      <h2>05</h2>
+      <ul>
+      <li>09:30<a href="#">重要会议</a></li>
+      <li>15:30<a href="#">学术研究</a></li>
+      </ul>
+      </div>
+    <div class="caledar_d_g">
+      <h2>06</h2>
+      <ul>
+      <li>12:30<a href="#">社区出诊</a></li>
+      <li>15:30<a href="#">社区讲座</a></li>
+      </ul>
+      </div>
+    <div class="caledar_d">
+      <h2>07</h2></div>
+    </td>
+  </tr>
+</table>
+<table width="730" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="3" align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3"><div class="big_box_top"><span>预约挂号</span></div>
+      <div class="big_box_m">
+        <table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td height="5" align="center"></td>
+          </tr>
+        </table>
+        <table width="97%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="23%" valign="top" style="border-right:1px dotted #0099FF;"><iframe src="hospital.html" name="right"  scrolling="Auto" frameborder="0" id="right" style="width:100%; height:310px; margin:0 auto; border-right:1px dotted #0099FF;"></iframe>
+            
+            </td>
+            <td width="77%" valign="top">
+            <table border="0" align="center" cellpadding="0" cellspacing="0" class="list-input-table" style="width:96%">
+  			<tr>
+    			
+                <td width="200" align="left"><strong>新华医院</strong></td>
+                <td width="200" align="right">请选择您要预约的时间：</td>
+                <td align="center" class="list-input">
+    			  <input name="textfield" type="text" id="textfield" value="2012-02-01" />
+    			</td>
+    			<td><img src="images/list-data-input-br.jpg"/></td>
+                </tr></table>
+            <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0" class="order-list">
+              <tr>
+                <th width="12%">时间</th>
+                <th width="11%">外科</th>
+                <th width="11%">内科</th>
+                <th width="11%">心血管科</th>
+                <th width="11%">中医</th>
+                <th width="11%">脑外科</th>
+                <th width="11%">骨科</th>
+                <th width="11%">妇科</th>
+                <th width="11%">儿科</th>
+              </tr>
+              <tr>
+                <td>上午</td>
+                <td>已满</td>
+                <td>已满</td>
+                <td><input type="button" name="button2" id="button2" value="挂号" /></td>
+                <td>已满</td>
+                <td>已满</td>
+                <td><input type="button" name="button4" id="button4" value="挂号" /></td>
+                <td>已满</td>
+                <td>已满</td>
+              </tr>
+              <tr>
+                <td>下午</td>
+                <td><input type="button" name="button" id="button" value="挂号" /></td>
+                <td>已满</td>
+                <td>已满</td>
+                <td><input type="button" name="button3" id="button3" value="挂号" /></td>
+                <td><input type="button" name="button5" id="button5" value="挂号" /></td>
+                <td>已满</td>
+                <td><input type="button" name="button6" id="button6" value="挂号" /></td>
+                <td>已满</td>
+              </tr>
+              <tr>
+                <td>晚上</td>
+                <td>无</td>
+                <td>无</td>
+                <td>无</td>
+                <td>无</td>
+                <td>无</td>
+                <td>无</td>
+                <td>无</td>
+                <td>无</td>
+              </tr>
+            </table>
+            <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0" class="order-list">
+              <tr>
+                <th width="12%">时间</th>
+                <th width="11%">呼吸内科</th>
+                <th width="11%">五官科</th>
+                <th width="11%">皮肤科</th>
+                <th width="11%">内分泌科</th>
+                <th width="11%">神经外科</th>
+                <th width="11%">泌尿外科</th>
+                <th width="11%">感染课</th>
+                <th width="11%">血液科</th>
+              </tr>
+              <tr>
+                <td>上午</td>
+                <td>已满</td>
+                <td><input type="button" name="button8" id="button9" value="挂号" /></td>
+                <td><input type="button" name="button7" id="button7" value="挂号" /></td>
+                <td>已满</td>
+                <td>已满</td>
+                <td>已满</td>
+                <td>已满</td>
+                <td><input type="button" name="button10" id="button11" value="挂号" /></td>
+              </tr>
+              <tr>
+                <td>下午</td>
+                <td>已满</td>
+                <td>已满</td>
+                <td><input type="button" name="button9" id="button13" value="挂号" /></td>
+                <td>已满</td>
+                <td>已满</td>
+                <td>已满</td>
+                <td>已满</td>
+                <td>已满</td>
+              </tr>
+              <tr>
+                <td>晚上</td>
+                <td>无</td>
+                <td>无</td>
+                <td>无</td>
+                <td>无</td>
+                <td>无</td>
+                <td>无</td>
+                <td>无</td>
+                <td>无</td>
+              </tr>
+            </table></td>
+          </tr>
+        </table>
+      </div>
+      <div class="big_box_foot"></div></td>
+  </tr>
+</table>
+</body>
+</html>

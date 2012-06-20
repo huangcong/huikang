@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<!--[if !IE]>   jq库&    <![endif]-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/cut_over.js"></script>
+<script type="text/javascript" src="js/show.js"></script>
+<!--[if IE 6]>
+<script src="js/iepng.js" type="text/javascript"></script>
+<script src="js/iepng_fix.js" type="text/javascript"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/css.css" />
+</head>
+
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left" class="seat"><span>当前位置：<a href="#">统计报表</a>&gt;统计报表</span><img src="images/br-back.jpg" /><img src="images/br-forward.jpg" /></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<table width="730" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr><td>
+  	<div class="tab-big"><ul>
+    <li class="tmhover" onclick="ShowSub(2,1)" id="S_Menu_21">区域</li>
+    <li onclick="ShowSub(2,2)" id="S_Menu_22">企业</li>
+    <li onclick="ShowSub(2,3)" id="S_Menu_23">医院</li>
+    </ul>
+    </div>
+    
+    <div id="S_Cont_21">
+	<div class="big_box_top"><span>区域健康统计</span></div>
+    <div class="big_box_m">
+      <table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr><td height="10"></td></tr>
+      <tr><td height="5" align="center"><img src="images/map.jpg" width="697" height="269" /></td></tr>
+      <tr><td height="10"></td></tr>
+      <tr>
+        <td height="10"><table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="25%">区域内糖尿病人健康指标统计</td>
+            <td width="56%">&nbsp;</td>
+            <td width="11%"><select name="select" id="select">
+              <option>糖尿病</option>
+              <option>冠心病</option>
+              <option>高血压</option>
+            </select></td>
+            <td width="8%"><input type="submit" name="button" id="button" value="统计" /></td>
+          </tr>
+        </table></td></tr>
+        <tr><td height="5" align="center"><img src="images/pic_06.gif"/></td></tr>
+      </table>
+    </div>
+    <div class="big_box_foot"></div>
+    </div>
+    
+    <div id="S_Cont_22" style="display:none;">
+	<div class="big_box_top"><span>企业健康统计</span></div>
+    <div class="big_box_m">
+      <table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr><td height="10"></td></tr>
+      <tr>
+        <td height="5" align="center"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0" class="work-list">
+          <tr>
+            <th width="6%">&nbsp;</th>
+            <th width="44%">企业名称</th>
+            <th width="6%">&nbsp;</th>
+            <th width="44%">企业名称</th>
+            </tr>
+          <tr>
+            <td align="center"><input type="checkbox" name="checkbox" id="checkbox" /></td>
+            <td>上海普之康佳园科技有限公司</td>
+            <td align="center"><input type="checkbox" name="checkbox" id="checkbox" /></td>
+            <td>麒麟鲲鹏（中国）生物药业有限公司</td>
+            </tr>
+            <tr>
+            <td align="center"><input type="checkbox" name="checkbox" id="checkbox" /></td>
+            <td>上海迪赛诺医药发展有限公司</td>
+            <td align="center"><input type="checkbox" name="checkbox" id="checkbox" /></td>
+            <td>上海三共制药有限公司</td>
+            </tr>
+            <tr>
+            <td align="center"><input type="checkbox" name="checkbox" id="checkbox" /></td>
+            <td>上海迪赛诺生物医药有限公司 </td>
+            <td align="center"><input type="checkbox" name="checkbox" id="checkbox" /></td>
+            <td>上海天士力药业有限公司</td>
+            </tr>
+            <tr>
+            <td align="center"><input type="checkbox" name="checkbox" id="checkbox" /></td>
+            <td>上海罗氏制药有限公司</td>
+            <td align="center"><input type="checkbox" name="checkbox" id="checkbox" /></td>
+            <td>锐迪科微电子（上海）有限公司</td>
+            </tr>
+            <tr>
+            <td align="center"><input type="checkbox" name="checkbox" id="checkbox" /></td>
+            <td>中芯国际集成电路制造（上海）有限公司 </td>
+            <td align="center"><input type="checkbox" name="checkbox" id="checkbox" /></td>
+            <td>威宇科技测试封装有限公司</td>
+            </tr>
+        </table></td></tr>
+      <tr><td height="10"></td></tr>
+      <tr>
+        <td height="10"><table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="25%">企业糖尿病人健康指标统计</td>
+            <td width="56%">&nbsp;</td>
+            <td width="11%"><select name="select" id="select">
+              <option>糖尿病</option>
+              <option>冠心病</option>
+              <option>高血压</option>
+            </select></td>
+            <td width="8%"><input type="submit" name="button" id="button" value="统计" /></td>
+          </tr>
+        </table></td></tr>
+        <tr><td height="5" align="center"><img src="images/pic_06.gif"/></td></tr>
+      </table>
+    </div>
+    <div class="big_box_foot"></div>
+    </div>
+
+    <div id="S_Cont_23" style="display:none;">
+	<div class="big_box_top"><span>医院健康统计</span></div>
+    <div class="big_box_m">
+      <table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr><td height="10"></td></tr>
+      <tr>
+        <td height="5" align="center"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0" class="work-list">
+          <tr>
+            <th width="6%">&nbsp;</th>
+            <th width="44%">医院名称</th>
+            <th width="6%">&nbsp;</th>
+            <th width="44%">医院名称</th>
+            </tr>
+          <tr>
+            <td align="center"><input type="checkbox" name="checkbox" id="checkbox" /></td>
+            <td><a title="上海市仁和医院" href="http://yiyuan.39world.com/shanghai/124758.html">上海市仁和医院</a></td>
+            <td align="center"><input type="checkbox" name="checkbox" id="checkbox" /></td>
+            <td><ul>
+              <li></li>
+            </ul>
+              <ul>
+                <li><a title="上海市中冶集团职工医院" href="http://yiyuan.39world.com/shanghai/124755.html">上海市中冶集团职工医院</a></li>
+              </ul></td>
+            </tr>
+            <tr>
+            <td align="center"><input type="checkbox" name="checkbox" id="checkbox" /></td>
+            <td><a href="s?wd=%C9%CF%BA%A3%CE%E4%BE%AF%D7%DC%B6%D3%D2%BD%D4%BA&amp;rsp=1&amp;oq=%C9%CF%BA%A3%D2%BD%D4%BA%B4%F3%C8%AB&amp;f=1&amp;rsv_ers=xn0&amp;rs_src=0">上海武警总队医院</a></td>
+            <td align="center"><input type="checkbox" name="checkbox" id="checkbox" /></td>
+            <td>上海华山医院</td>
+            </tr>
+            <tr>
+            <td align="center"><input type="checkbox" name="checkbox" id="checkbox" /></td>
+            <td>上海瑞金医院</td>
+            <td align="center"><input type="checkbox" name="checkbox" id="checkbox" /></td>
+            <td>第九人民医院</td>
+            </tr>
+            <tr>
+            <td align="center"><input type="checkbox" name="checkbox" id="checkbox" /></td>
+            <td>上海曙光医院</td>
+            <td align="center"><input type="checkbox" name="checkbox" id="checkbox" /></td>
+            <td>第六人民医院</td>
+            </tr>
+            <tr>
+            <td align="center"><input type="checkbox" name="checkbox" id="checkbox" /></td>
+            <td>上海长征医院</td>
+            <td align="center"><input type="checkbox" name="checkbox" id="checkbox" /></td>
+            <td>上海交通大学附属第一人民医院</td>
+            </tr>
+        </table></td></tr>
+      <tr><td height="10"></td></tr>
+      <tr>
+        <td height="10"><table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="25%">医院糖尿病人健康指标统计</td>
+            <td width="56%">&nbsp;</td>
+            <td width="11%"><select name="select" id="select">
+              <option>糖尿病</option>
+              <option>冠心病</option>
+              <option>高血压</option>
+            </select></td>
+            <td width="8%"><input type="submit" name="button" id="button" value="统计" /></td>
+          </tr>
+        </table></td></tr>
+        <tr><td height="5" align="center"><img src="images/pic_06.gif"/></td></tr>
+      </table>
+    </div>
+    <div class="big_box_foot"></div>
+    </div>
+  </td></tr>
+</table>
+</body>
+</html>

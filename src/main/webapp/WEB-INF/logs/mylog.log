@@ -1,0 +1,26 @@
+2012-06-07 11:11:56,800 ERROR [JDBCExceptionReporter] - Cannot create PoolableConnectionFactory (Syntax error in SQL statement "
+CREATE TABLE ""HK_ELECTRONIC_CASE"" (
+  ""ID"" INT(10) NOT NULL AUTO_INCREMENT COMMENT '流水号',
+  ""WORK_ORDER_ID"" INT(45) NOT NULL DEFAULT '0' COMMENT '工作单',
+  ""PATIENT_ID"" INT(45) NOT NULL DEFAULT '0' COMMENT '患者',
+  ""START_DATE"" VARCHAR(45) CHARACTER[*] SET UTF8 NOT NULL COMMENT '开始时间',
+  ""END_DATE"" VARCHAR(45) CHARACTER SET UTF8 NOT NULL COMMENT '结束时间',
+  ""ITEM"" INT(10) NOT NULL DEFAULT '0' COMMENT '体检项目',
+  ""TYPE"" INT(10) NOT NULL DEFAULT '0' COMMENT '数据类型',
+  ""ITEM_INFO"" LONGTEXT CHARACTER SET UTF8 NOT NULL COMMENT '体检信息',
+  ""IMPORT_DATE"" BIGINT(45) NOT NULL DEFAULT '0' COMMENT '入导时间',
+  PRIMARY KEY  (""ID"")
+)  "; expected "FOR, UNSIGNED, NOT, NULL, AS, DEFAULT, GENERATED, NOT, NULL, AUTO_INCREMENT, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+
+CREATE TABLE `hk_electronic_case` (
+  `id` int(10) NOT NULL auto_increment COMMENT '流水号',
+  `work_order_id` int(45) NOT NULL default '0' COMMENT '工作单',
+  `patient_id` int(45) NOT NULL default '0' COMMENT '患者',
+  `start_date` varchar(45) character set utf8 NOT NULL COMMENT '开始时间',
+  `end_date` varchar(45) character set utf8 NOT NULL COMMENT '结束时间',
+  `item` int(10) NOT NULL default '0' COMMENT '体检项目',
+  `type` int(10) NOT NULL default '0' COMMENT '数据类型',
+  `item_info` longtext character set utf8 NOT NULL COMMENT '体检信息',
+  `import_date` bigint(45) NOT NULL default '0' COMMENT '入导时间',
+  PRIMARY KEY  (`id`)
+)  [42001-164])
